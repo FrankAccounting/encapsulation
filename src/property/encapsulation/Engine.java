@@ -28,19 +28,17 @@ public class Engine {
     private int cylinderCount;
     private boolean running;
 
-    // Is using the default constructor always a good idea?
-    // What happens if setCylinderCount() is never called?
     public Engine(int cylinders) {
         setCylinderCount(cylinders);
     }
 
-    // We are providing read-only access to this property. this is a
+    // We are providing read-only access to this property. This is a
     // requirements issue.
     public int getCylinderCount() {
         return cylinderCount;
     }
 
-    // by making this private you cannot change the cyclinder count once
+    // By making this private you cannot change the cylinder count once
     // the engine is created. This is a requirements issue.
     private void setCylinderCount(int value) {
         if (value < 1 || value > 12) {

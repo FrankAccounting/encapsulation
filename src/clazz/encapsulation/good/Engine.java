@@ -2,10 +2,11 @@ package clazz.encapsulation.good;
 
 /**
  * This class is also hidden (encapsulated).
- * 
+ *
  * @author jlombardo
  */
 public class Engine {
+
     private int cylinderCount;
     private boolean running;
 
@@ -15,14 +16,14 @@ public class Engine {
     }
 
     public void startEngine() {
-        if(!running) {
+        if (!running) {
             running = true;
         }
         // check oil
     }
 
     public void stop() {
-        if(running) {
+        if (running) {
             running = false;
         }
     }
@@ -34,6 +35,4 @@ public class Engine {
     public boolean isRunning() {
         return running;
     }
-
-
 }
